@@ -1,0 +1,83 @@
+{
+  "name": "NucDeck Handheld",
+  "version": "1.0",
+  "modifications": [],
+  "last_render": null,
+  "parameters": {
+    "project": {
+      "name": "NucDeck Handheld",
+      "version": "1.0",
+      "output_dir": "output"
+    },
+    "dimensions": {
+      "case_length": 300,
+      "case_width": 120,
+      "case_height": 40,
+      "screen_width": 170,
+      "screen_height": 100,
+      "screen_depth": 3,
+      "button_diameter": 12,
+      "button_depth": 2,
+      "joystick_diameter": 20,
+      "joystick_height": 15
+    },
+    "layout": {
+      "screen": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "left_joystick": {
+        "x": -80,
+        "y": -30,
+        "z": 0
+      },
+      "right_joystick": {
+        "x": 80,
+        "y": -30,
+        "z": 0
+      },
+      "action_buttons": {
+        "x": 60,
+        "y": 20,
+        "z": 0,
+        "spacing": 15
+      },
+      "dpad": {
+        "x": -60,
+        "y": 20,
+        "z": 0
+      }
+    },
+    "materials": {
+      "case_thickness": 3,
+      "support_thickness": 2,
+      "tolerance": 0.2
+    },
+    "printing": {
+      "layer_height": 0.2,
+      "infill": 20,
+      "supports": true,
+      "brim": true
+    },
+    "ai": {
+      "model": "gpt-4",
+      "temperature": 0.7,
+      "max_modifications_per_session": 10,
+      "auto_render": true
+    },
+    "openscad": {
+      "executable": "openscad",
+      "render_quality": "medium",
+      "export_format": "stl"
+    },
+    "paths": {
+      "stl_import": "Housing - STL",
+      "step_import": "Housing - STEP",
+      "buttons_stl": "Buttons - STL",
+      "buttons_step": "Buttons - STEP",
+      "output": "output",
+      "temp": "temp"
+    }
+  }
+}
