@@ -1,0 +1,32 @@
+# NucDeck CAD Automation Requirements
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+numpy>=1.21.0
+scipy>=1.7.0
+openai>=0.27.0
+
+# File handling
+pathlib2>=2.3.0
+
+# HTTP server (built-in, but useful for development)
+requests>=2.25.0
+
+# Optional AI/ML dependencies (uncomment as needed)
+# openai>=0.27.0              # For OpenAI API integration
+# anthropic>=0.3.0            # For Claude API integration
+# transformers>=4.20.0        # For local language models
+# torch>=1.12.0               # For PyTorch-based models
+
+# Optional 3D processing libraries
+# numpy-stl>=2.16.0           # For STL file processing
+# trimesh>=3.12.0             # For advanced 3D mesh operations
+# pymeshlab>=2022.2           # For mesh processing and repair
+
+# Development and testing
+pytest>=6.2.0
+black>=22.0.0                # Code formatting
+flake8>=4.0.0               # Linting
+
+# Documentation
+markdown>=3.4.0
