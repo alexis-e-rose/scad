@@ -34,12 +34,39 @@ class NucDeckHTTPHandler(http.server.SimpleHTTPRequestHandler):
             post_data = self.rfile.read(content_length)
             parameters = json.loads(post_data.decode('utf-8'))
             
-            # Here you would call the CAD automation script
-            # For now, just return a success response
+            # Import and use the CAD automation system
+            import sys
+            sys.path.append('/workspaces/scad')
+            from cad_automator import NucDeckCADAutomator
+            
+            # Create automator instance and apply parameters
+            automator = NucDeckCADAutomator()
+            
+            # Convert web parameters to CAD parameters
+            cad_params = {}
+            if 'phoneWidth' in parameters:
+                cad_params['phone_width'] = parameters['phoneWidth']
+            if 'phoneHeight' in parameters:
+                cad_params['phone_height'] = parameters['phoneHeight']
+            if 'batterySize' in parameters:
+                cad_params['battery_height'] = parameters['batterySize'] / 1000  # Convert mAh to rough height
+            if 'gripOffset' in parameters:
+                cad_params['grip_offset'] = parameters['gripOffset']
+            
+            # Generate STL with new parameters
+            output_stl = "/workspaces/scad/output/nucdeck_web_generated.stl"
+            success = automator.render_stl(
+                str(automator.main_scad_file), 
+                output_stl, 
+                cad_params
+            )
+            
             response = {
-                "status": "success",
-                "message": "Model regeneration initiated",
-                "parameters": parameters
+                "status": "success" if success else "error",
+                "message": "Model regenerated successfully" if success else "Failed to regenerate model",
+                "parameters": parameters,
+                "output_file": output_stl if success else None,
+                "cad_params": cad_params
             }
             
             self.send_response(200)
@@ -49,7 +76,16 @@ class NucDeckHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(json.dumps(response).encode())
             
         except Exception as e:
-            self.send_error(500, f"Error processing request: {str(e)}")
+            error_response = {
+                "status": "error",
+                "message": f"Error processing request: {str(e)}",
+                "parameters": parameters if 'parameters' in locals() else {}
+            }
+            self.send_response(500)
+            self.send_header('Content-type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps(error_response).encode())
     
     def handle_file_upload(self):
         """Handle STL file uploads"""
@@ -68,8 +104,30 @@ class NucDeckHTTPHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
         self.end_headers()
+    
+    def do_GET(self):
+        """Handle GET requests with custom routing"""
+        if self.path.startswith('/output/'):
+            # Serve files from the output directory
+            file_path = '/workspaces/scad' + self.path
+            if os.path.exists(file_path):
+                self.send_response(200)
+                if self.path.endswith('.stl'):
+                    self.send_header('Content-type', 'application/octet-stream')
+                    self.send_header('Content-Disposition', f'attachment; filename="{os.path.basename(file_path)}"')
+                else:
+                    self.send_header('Content-type', 'application/octet-stream')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                with open(file_path, 'rb') as f:
+                    self.wfile.write(f.read())
+            else:
+                self.send_error(404, "File not found")
+        else:
+            # Use default handler for other requests
+            super().do_GET()
 
-def start_server(port=8080):
+def start_server(port=8000):
     """Start the HTTP server"""
     try:
         with socketserver.TCPServer(("", port), NucDeckHTTPHandler) as httpd:
@@ -99,7 +157,7 @@ def start_server(port=8080):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='NucDeck STL Viewer Server')
-    parser.add_argument('--port', type=int, default=8080, help='Port to serve on (default: 8080)')
+    parser.add_argument('--port', type=int, default=8000, help='Port to serve on (default: 8000)')
     args = parser.parse_args()
     
     start_server(args.port)

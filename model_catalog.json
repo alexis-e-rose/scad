@@ -1,0 +1,570 @@
+{
+  "housing_stl": [
+    {
+      "name": "Trigger Mount Right",
+      "path": "Housing - STL/Trigger Mount Right.STL",
+      "type": ".stl",
+      "size": 438096,
+      "category": "housing_trigger",
+      "description": "Trigger mount assembly"
+    },
+    {
+      "name": "Back Cover 7th Gen Intel NUC",
+      "path": "Housing - STL/Back Cover 7th Gen Intel NUC.STL",
+      "type": ".stl",
+      "size": 5497080,
+      "category": "housing_back",
+      "description": "Back cover with ventilation and port access"
+    },
+    {
+      "name": "Trigger Mount Left",
+      "path": "Housing - STL/Trigger Mount Left.STL",
+      "type": ".stl",
+      "size": 438978,
+      "category": "housing_trigger",
+      "description": "Trigger mount assembly"
+    },
+    {
+      "name": "LCD Retainer",
+      "path": "Housing - STL/LCD Retainer.STL",
+      "type": ".stl",
+      "size": 574507,
+      "category": "housing_misc",
+      "description": "3D model component: LCD Retainer"
+    },
+    {
+      "name": "Housing Front - No RGB",
+      "path": "Housing - STL/Housing Front - No RGB.STL",
+      "type": ".stl",
+      "size": 7211049,
+      "category": "housing_front",
+      "description": "Front housing panel with screen cutout and button holes"
+    },
+    {
+      "name": "Left Side Grip",
+      "path": "Housing - STL/Left Side Grip.STL",
+      "type": ".stl",
+      "size": 4155608,
+      "category": "housing_grip",
+      "description": "Side grip for ergonomic handling"
+    },
+    {
+      "name": "Outlet Cover Plate 7th Gen Intel NUC",
+      "path": "Housing - STL/Outlet Cover Plate 7th Gen Intel NUC.STL",
+      "type": ".stl",
+      "size": 938018,
+      "category": "housing_back",
+      "description": "Back cover with ventilation and port access"
+    },
+    {
+      "name": "Right Side Grip",
+      "path": "Housing - STL/Right Side Grip.STL",
+      "type": ".stl",
+      "size": 4151578,
+      "category": "housing_grip",
+      "description": "Side grip for ergonomic handling"
+    },
+    {
+      "name": "Joystick Surround Ring",
+      "path": "Housing - STL/Joystick Surround Ring.STL",
+      "type": ".stl",
+      "size": 937508,
+      "category": "housing_misc",
+      "description": "3D model component: Joystick Surround Ring"
+    },
+    {
+      "name": "Housing Front",
+      "path": "Housing - STL/Housing Front.STL",
+      "type": ".stl",
+      "size": 7201060,
+      "category": "housing_front",
+      "description": "Front housing panel with screen cutout and button holes"
+    }
+  ],
+  "housing_step": [
+    {
+      "name": "Joystick Surround Ring",
+      "path": "Housing - STEP/Joystick Surround Ring.STEP",
+      "type": ".step",
+      "size": 74712,
+      "category": "housing_misc",
+      "description": "3D model component: Joystick Surround Ring"
+    },
+    {
+      "name": "Trigger Mount Right",
+      "path": "Housing - STEP/Trigger Mount Right.STEP",
+      "type": ".step",
+      "size": 167771,
+      "category": "housing_trigger",
+      "description": "Trigger mount assembly"
+    },
+    {
+      "name": "Housing Front - No RGB",
+      "path": "Housing - STEP/Housing Front - No RGB.STEP",
+      "type": ".step",
+      "size": 2704270,
+      "category": "housing_front",
+      "description": "Front housing panel with screen cutout and button holes"
+    },
+    {
+      "name": "Outlet Cover Plate 7th Gen Intel NUC",
+      "path": "Housing - STEP/Outlet Cover Plate 7th Gen Intel NUC.STEP",
+      "type": ".step",
+      "size": 329654,
+      "category": "housing_back",
+      "description": "Back cover with ventilation and port access"
+    },
+    {
+      "name": "Right Side Grip",
+      "path": "Housing - STEP/Right Side Grip.STEP",
+      "type": ".step",
+      "size": 1425561,
+      "category": "housing_grip",
+      "description": "Side grip for ergonomic handling"
+    },
+    {
+      "name": "Housing Front",
+      "path": "Housing - STEP/Housing Front.STEP",
+      "type": ".step",
+      "size": 2709801,
+      "category": "housing_front",
+      "description": "Front housing panel with screen cutout and button holes"
+    },
+    {
+      "name": "Trigger Mount Left",
+      "path": "Housing - STEP/Trigger Mount Left.STEP",
+      "type": ".step",
+      "size": 224200,
+      "category": "housing_trigger",
+      "description": "Trigger mount assembly"
+    },
+    {
+      "name": "Left Side Grip",
+      "path": "Housing - STEP/Left Side Grip.STEP",
+      "type": ".step",
+      "size": 1741200,
+      "category": "housing_grip",
+      "description": "Side grip for ergonomic handling"
+    },
+    {
+      "name": "LCD Retainer",
+      "path": "Housing - STEP/LCD Retainer.STEP",
+      "type": ".step",
+      "size": 299296,
+      "category": "housing_misc",
+      "description": "3D model component: LCD Retainer"
+    },
+    {
+      "name": "Back Cover 7th Gen Intel NUC",
+      "path": "Housing - STEP/Back Cover 7th Gen Intel NUC.STEP",
+      "type": ".step",
+      "size": 1788510,
+      "category": "housing_back",
+      "description": "Back cover with ventilation and port access"
+    }
+  ],
+  "buttons_stl": [
+    {
+      "name": "Trigger Button Left",
+      "path": "Buttons - STL/Trigger Button Left.STL",
+      "type": ".stl",
+      "size": 938050,
+      "category": "button_trigger",
+      "description": "Trigger button assembly"
+    },
+    {
+      "name": "Left Shoulder Button - Printable Version",
+      "path": "Buttons - STL/Left Shoulder Button - Printable Version.STL",
+      "type": ".stl",
+      "size": 595309,
+      "category": "button_shoulder",
+      "description": "Shoulder button"
+    },
+    {
+      "name": "- Volume Button",
+      "path": "Buttons - STL/- Volume Button.STL",
+      "type": ".stl",
+      "size": 24484,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Controller Mode Toggle",
+      "path": "Buttons - STL/Controller Mode Toggle.STL",
+      "type": ".stl",
+      "size": 226922,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Trigger Button Right",
+      "path": "Buttons - STL/Trigger Button Right.STL",
+      "type": ".stl",
+      "size": 939802,
+      "category": "button_trigger",
+      "description": "Trigger button assembly"
+    },
+    {
+      "name": "Right Shoulder Button - Printable Version",
+      "path": "Buttons - STL/Right Shoulder Button - Printable Version.STL",
+      "type": ".stl",
+      "size": 594242,
+      "category": "button_shoulder",
+      "description": "Shoulder button"
+    },
+    {
+      "name": "NUCDeck D-Pad - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/NUCDeck D-Pad - Clicky.STL",
+      "type": ".stl",
+      "size": 1843564,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button Y - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Action Button Y - Clicky.STL",
+      "type": ".stl",
+      "size": 706092,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Action Button A - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Action Button A - Clicky.STL",
+      "type": ".stl",
+      "size": 753622,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Select Button - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Select Button - Clicky.STL",
+      "type": ".stl",
+      "size": 670245,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button X - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Action Button X - Clicky.STL",
+      "type": ".stl",
+      "size": 706627,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Menu Button - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Menu Button - Clicky.STL",
+      "type": ".stl",
+      "size": 528935,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button B - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Action Button B - Clicky.STL",
+      "type": ".stl",
+      "size": 807363,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Start Button - Clicky",
+      "path": "Buttons - STL/Clicky Buttons - STL/Start Button - Clicky.STL",
+      "type": ".stl",
+      "size": 632293,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button X - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Action Button X - Standard.STL",
+      "type": ".stl",
+      "size": 131684,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Start Button - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Start Button - Standard.STL",
+      "type": ".stl",
+      "size": 117484,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button Y - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Action Button Y - Standard.STL",
+      "type": ".stl",
+      "size": 132384,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Select Button - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Select Button - Standard.STL",
+      "type": ".stl",
+      "size": 124684,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button B - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Action Button B - Standard.STL",
+      "type": ".stl",
+      "size": 151684,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "NUCDeck D-Pad - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/NUCDeck D-Pad - Standard.STL",
+      "type": ".stl",
+      "size": 1837399,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Menu Button - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Menu Button - Standard.STL",
+      "type": ".stl",
+      "size": 97884,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button A - Standard",
+      "path": "Buttons - STL/Membrane Buttons - STL/Action Button A - Standard.STL",
+      "type": ".stl",
+      "size": 140284,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Power Button",
+      "path": "Buttons - STL/Power Button.STL",
+      "type": ".stl",
+      "size": 36884,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "+ Volume Button",
+      "path": "Buttons - STL/+ Volume Button.STL",
+      "type": ".stl",
+      "size": 26084,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    }
+  ],
+  "buttons_step": [
+    {
+      "name": "Shoulder Button - Right",
+      "path": "Buttons - STEP/Shoulder Button - Right.STEP",
+      "type": ".step",
+      "size": 185176,
+      "category": "button_shoulder",
+      "description": "Shoulder button"
+    },
+    {
+      "name": "Shoulder Spring - Left",
+      "path": "Buttons - STEP/Shoulder Spring - Left.STEP",
+      "type": ".step",
+      "size": 57526,
+      "category": "button_shoulder",
+      "description": "Shoulder button"
+    },
+    {
+      "name": "+ Volume Button",
+      "path": "Buttons - STEP/+ Volume Button.STEP",
+      "type": ".step",
+      "size": 86402,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Trigger Button Right",
+      "path": "Buttons - STEP/Trigger Button Right.STEP",
+      "type": ".step",
+      "size": 424636,
+      "category": "button_trigger",
+      "description": "Trigger button assembly"
+    },
+    {
+      "name": "- Volume Button",
+      "path": "Buttons - STEP/- Volume Button.STEP",
+      "type": ".step",
+      "size": 67826,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Shoulder Button - Left",
+      "path": "Buttons - STEP/Shoulder Button - Left.STEP",
+      "type": ".step",
+      "size": 142421,
+      "category": "button_shoulder",
+      "description": "Shoulder button"
+    },
+    {
+      "name": "Select Button - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Select Button - Standard.STEP",
+      "type": ".step",
+      "size": 366676,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button A - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Action Button A - Standard.STEP",
+      "type": ".step",
+      "size": 101966,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Action Button B - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Action Button B - Standard.STEP",
+      "type": ".step",
+      "size": 179823,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Action Button X - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Action Button X - Standard.STEP",
+      "type": ".step",
+      "size": 100235,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "D-Pad - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/D-Pad - Standard.STEP",
+      "type": ".step",
+      "size": 331564,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Start Button - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Start Button - Standard.STEP",
+      "type": ".step",
+      "size": 317641,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button Y - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Action Button Y - Standard.STEP",
+      "type": ".step",
+      "size": 94335,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Menu Button - Standard",
+      "path": "Buttons - STEP/Membrane Buttons - STEP/Menu Button - Standard.STEP",
+      "type": ".step",
+      "size": 199788,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Power Button",
+      "path": "Buttons - STEP/Power Button.STEP",
+      "type": ".step",
+      "size": 78261,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button Y - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Action Button Y - Clicky.STEP",
+      "type": ".step",
+      "size": 94308,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Action Button B - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Action Button B - Clicky.STEP",
+      "type": ".step",
+      "size": 179791,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "NUCDeck D-Pad - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/NUCDeck D-Pad - Clicky.STEP",
+      "type": ".step",
+      "size": 331660,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Menu Button - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Menu Button - Clicky.STEP",
+      "type": ".step",
+      "size": 199785,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Action Button X - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Action Button X - Clicky.STEP",
+      "type": ".step",
+      "size": 100226,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Action Button A - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Action Button A - Clicky.STEP",
+      "type": ".step",
+      "size": 101923,
+      "category": "button_action",
+      "description": "Action button (A/B/X/Y)"
+    },
+    {
+      "name": "Select Button - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Select Button - Clicky.STEP",
+      "type": ".step",
+      "size": 366703,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Start Button - Clicky",
+      "path": "Buttons - STEP/Clicky Buttons - STEP/Start Button - Clicky.STEP",
+      "type": ".step",
+      "size": 317685,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    },
+    {
+      "name": "Trigger Button Left",
+      "path": "Buttons - STEP/Trigger Button Left.STEP",
+      "type": ".step",
+      "size": 440473,
+      "category": "button_trigger",
+      "description": "Trigger button assembly"
+    },
+    {
+      "name": "Shoulder Spring - Right",
+      "path": "Buttons - STEP/Shoulder Spring - Right.STEP",
+      "type": ".step",
+      "size": 57450,
+      "category": "button_shoulder",
+      "description": "Shoulder button"
+    },
+    {
+      "name": "Controller Mode Toggle",
+      "path": "Buttons - STEP/Controller Mode Toggle.STEP",
+      "type": ".step",
+      "size": 96853,
+      "category": "button_dpad",
+      "description": "Directional pad"
+    }
+  ]
+}

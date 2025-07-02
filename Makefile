@@ -63,9 +63,9 @@ interactive:
 	python3 cad_assistant.py
 
 web:
-	@echo "🌐 Starting web viewer at http://localhost:8000"
+	@echo "🌐 Starting NucDeck web viewer with API support..."
 	@echo "Press Ctrl+C to stop"
-	python3 -m http.server 8000 --directory web_viewer
+	python3 web_viewer/server.py
 
 # Demo and testing
 demo:
