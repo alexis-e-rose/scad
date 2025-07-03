@@ -215,9 +215,10 @@
                     📤 Upload STL Files
                 </div>
                 <div class="file-list" id="file-list">
-                    <div class="file-item" data-file="housing">🏠 Housing Assembly</div>
-                    <div class="file-item" data-file="buttons">🔘 Button Set</div>
-                    <div class="file-item" data-file="grips">✋ Side Grips</div>
+                    <div class="file-item" data-file="demo" onclick="loadDemoFile('demo_nucdeck.stl')">🎮 Demo Assembly</div>
+                    <div class="file-item" data-file="housing" onclick="loadDemoFile('sample_housing.stl')">🏠 Housing Front</div>
+                    <div class="file-item" data-file="buttons">🔘 Button Set (Upload STL)</div>
+                    <div class="file-item" data-file="grips">✋ Side Grips (Upload STL)</div>
                 </div>
             </div>
             
@@ -599,6 +600,54 @@ Examples:
         function validateFitment() {
             console.log('Validating component fitment...');
             // Implementation for fitment validation
+        }
+        
+        // Demo file loading
+        function loadDemoFile(filename) {
+            fetch(filename)
+                .then(response => response.arrayBuffer())
+                .then(data => {
+                    const loader = new THREE.STLLoader();
+                    const geometry = loader.parse(data);
+                    
+                    // Create material
+                    const material = new THREE.MeshLambertMaterial({
+                        color: new THREE.Color().setHSL(Math.random(), 0.7, 0.5),
+                        transparent: true,
+                        opacity: 0.9
+                    });
+                    
+                    const mesh = new THREE.Mesh(geometry, material);
+                    mesh.name = filename;
+                    mesh.castShadow = true;
+                    mesh.receiveShadow = true;
+                    
+                    // Center the geometry
+                    geometry.computeBoundingBox();
+                    const center = geometry.boundingBox.getCenter(new THREE.Vector3());
+                    geometry.translate(-center.x, -center.y, -center.z);
+                    
+                    // Clear existing demo models and add new one
+                    loadedModels.forEach(model => {
+                        if (model.name.includes('demo') || model.name.includes('sample')) {
+                            scene.remove(model);
+                        }
+                    });
+                    loadedModels = loadedModels.filter(model => 
+                        !model.name.includes('demo') && !model.name.includes('sample')
+                    );
+                    
+                    scene.add(mesh);
+                    loadedModels.push(mesh);
+                    
+                    updateFileList();
+                    updateModelInfo();
+                    focusOnModel(mesh);
+                })
+                .catch(error => {
+                    console.error('Error loading demo file:', error);
+                    alert(`Error loading ${filename}. Make sure the server is running and files are available.`);
+                });
         }
         
         // Initialize viewer when page loads

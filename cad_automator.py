@@ -22,7 +22,8 @@ class NucDeckCADAutomator:
         self.workspace_path = Path(workspace_path)
         self.openscad_dir = self.workspace_path / "OpenSCAD"
         self.output_dir = self.workspace_path / "output"
-        self.main_scad_file = self.openscad_dir / "nucdeck_assembly.scad"
+        self.main_scad_file = self.openscad_dir / "demo_assembly.scad"  # Use simpler demo for now
+        self.complex_scad_file = self.openscad_dir / "nucdeck_assembly.scad"  # Keep original for later
         
         # Create output directory if it doesn't exist
         self.output_dir.mkdir(exist_ok=True)
